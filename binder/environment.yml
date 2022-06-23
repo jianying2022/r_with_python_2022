@@ -4,8 +4,8 @@ channels:
 - bioconda
 - defauts
 dependencies:
-  - python=3.7.7
-  - r-base=3.5.3
+  - python=3.9
+  - r-base=4.0
   - r-dplyr
   - r-tidyverse
   - r-ggplot2
