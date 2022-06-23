@@ -1,4 +1,19 @@
+name:base
+channels:
+- conda-forge
+- bioconda
+- defauts
 dependencies:
-  - matplotlib
-  - numpy
-  - pandas
+  - python=3.7.7
+  - r-base=3.5.3
+  - r-dplyr
+  - r-tidyverse
+  - r-ggplot2
+  - r-reshape2
+  -pip
+  -pip:
+     - numpy
+     - pandas
+     - matplotlib
+     - scikit-learn
+     
