@@ -1,0 +1,50 @@
+---
+title: "R_first_application"
+author: "Jianying Li"
+date: "7/1/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# add labrary
+
+```{r cars}
+library(ggplot2)
+```
+# load data
+```{r}
+dataset = read.csv('regrex1.csv')
+```
+# Fitting Linear Regression to the dataset
+```{r}
+
+model = lm(formula = y ~ x,   data = dataset)
+```
+#Summary analysis of the model
+```{r}
+              
+summary(model)
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+ggplot() +
+  geom_point(aes(x = dataset$x, y = dataset$y),
+             colour = 'red') +
+  geom_line(aes(x = dataset$x, y = predict(model, newdata = dataset)),
+            colour = 'blue') +
+  ggtitle('y vs x') +
+  xlab('x') +
+  ylab('y') 
+
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
