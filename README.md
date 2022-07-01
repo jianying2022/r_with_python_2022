@@ -6,7 +6,6 @@ This repo builds on the [r binder](https://github.com/binder-examples/r) and [ju
  - Launch in RStudio: [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/jianying2022/r_with_python_2022?urlpath=rstudio)
 
 Example files included:
-https://github.com/jianying2022/r_with_python_2022.git
  - `python_jianying.ipynb` - Notebook file using a python kernel for working in Jupyter
  - `R_regression.Rmd` - RMarkdown file with python code chunks for working in RStudio
  - `R_example_for_RStudio.Rmd` - RMarkdown file with R code chunkcs for working in RStudio
